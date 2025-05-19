@@ -1,0 +1,27 @@
+Date: March 10, 2025
+Participants: John, Maria, Kevin, Sara
+Department: Customer Support
+Meeting Type: Triage Meeting
+
+John: Good morning team. We’ve got a backlog of support tickets related to Reach’s group invitation feature. Maria, what’s the volume looking like?
+Maria: As of 8 AM today, we have 245 new tickets since yesterday’s midnight deploy. Roughly 60% are about “Unable to send invites,” 25% are “Invitation email not delivered,” and 15% are miscellaneous errors like “Link expired” or “Permission denied.”
+Kevin: That’s high. Could this be linked to the caching changes Ravi implemented last week?
+Sara: Possibly. I did notice that some invite tokens were being cached incorrectly, causing expired tokens to persist. I flagged ticket #3421 for the dev team.
+John: Okay, but we need to prioritize. Which tickets are urgent?
+Maria: I’d rank “Email not delivered” highest because users can’t invite friends at all. Then “Unable to send invites,” since that’s core functionality. “Link expired” is third.
+Sara: Also note that we have 15 tickets about login timeouts when clicking invitation links. They’re looping to the login page repeatedly.
+Kevin: Could be session management issues. We should escalate those to engineering immediately.
+John: Agreed. Maria, draft a public status update for the community forum and tweet about known invite issues with ETA for fix.
+Maria: On it. Draft by noon.
+Sara: We also have 30 tickets asking for help with private vs. public group settings—some confusion over default privacy.
+John: Good catch. Let’s update our Help Center article accordingly. Kevin, can you and Sara collaborate on new documentation?
+Kevin: Sure, I’ll pair with Sara this afternoon.
+Sara: I’ll gather common user questions for the article.
+(Phone notification chime)
+John: Reminder: support training session tomorrow at 10 AM for new hires. Attendance mandatory.
+Maria: Got it.
+John: Anything else?
+Sara: We’ve had 5 tickets flagged as potential spam—bot invites flooding group chats.
+Maria: I increased spam filter sensitivity but need dev support to update CAPTCHA process.
+Kevin: I’ll look into integrating CAPTCHA on invite flows.
+John: Excellent. Let’s aim to clear high-priority tickets by EOD. Thanks, team!

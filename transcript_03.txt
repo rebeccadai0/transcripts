@@ -1,0 +1,34 @@
+Date: March 4, 2025
+Participants: Sasha, Mei, Omar, Zoe
+Department: Engineering
+Meeting Type: Daily Sync
+
+Sasha: Morning, everyone. Let’s kick off with updates on database migration. Mei?
+Mei: Migration is 75% complete in staging. We hit a snag with legacy user metadata—some JSON schema mismatches caused failures in about 2% of records.
+Omar: I saw those errors. We need a fallback parser that can coerce old schema into the new format, otherwise the deploy will break.
+Mei: I’ve written a small shim to transform those records on-the-fly. Tests show it works, but I need another code review to merge it.
+Zoe: Great. On API performance, we saw a 20% latency increase overnight. I suspect our caching layer isn’t invalidating correctly after profile updates.
+Sasha: Can you walk us through your diagnostics?
+Zoe: Sure. I ran Postman scripts against /v1/profile after update calls. The cache TTL was unchanged, so stale data persisted until the 5-minute expiry. Users posting new photos didn’t see them immediately.
+Omar: That TTL was set in the CDN config. I’ll update it to 30 seconds for dynamic resources, then revert to 5 minutes for static assets.
+Mei: Thanks. Next, CI/CD pipeline. Jenkins build is failing intermittently due to flaky Selenium tests on the onboarding flow.
+Sasha: Which test is flakiest?
+Mei: The "verify welcome modal" step—sometimes the button doesn’t render in time, causing a timeout.
+Zoe: E2E tests are timing-dependent. We could increase the wait threshold or mock the modal load.
+Omar: I propose mocking external dependencies for the modal, so tests are deterministic.
+Mei: Makes sense. I’ll adjust the test suite accordingly.
+
+(Brief pause; someone’s phone alarm goes off, then is silenced)
+
+Sasha: Okay. Security scan results?
+Omar: No critical vulnerabilities, but we need to update our OpenSSL package to address a low-severity CVE.
+Zoe: Deadline on that?
+Omar: End of day, ideally. I’ll coordinate with the DevOps team for a patched container image.
+Sasha: Good. Any blockers on the upcoming sprint? Remember code freeze on March 10.
+Mei: I’ll be on vacation next week—someone cover database monitoring?
+Zoe: I can handle alerts.
+Omar: I’ll check in daily.
+Sasha: Perfect. Lastly, on-call rotation next week: Zoe, you have first shift, Omar second. Mei and I will jump in as needed.
+Zoe: Got it.
+Mei: Thanks for covering.
+Sasha: That’s it. Let’s aim for zero regression bugs this sprint. Thanks, team!

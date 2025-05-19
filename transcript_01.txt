@@ -1,0 +1,24 @@
+Date: March 2, 2025
+Participants: Mike, Sofia, Lian, Ravi, Emma
+Department: Product
+Meeting Type: Weekly Standup
+
+Mike: Good morning team, let’s dive in. Last week we deployed the initial notification service update, but we’ve seen persistent latency issues. Sofia, can you walk us through what you observed?
+Sofia: Sure. I was monitoring production logs after the 9:00 AM spike yesterday, and I noticed the notification queue backed up for about 12 minutes. End users experienced delays ranging from 8 to 15 seconds, which is above our 2-second goal.
+Lian: Right, and I’ve checked the batching logic. It’s grouping notifications in sets of 100 by default, and when the load is high, it creates a bottleneck. The downstream service can’t process that many at once.
+Ravi: That matches my initial analysis. My plan is to switch to dynamic batching—smaller groups when queue length exceeds threshold X. I’ll implement an adaptive strategy by the end of today.
+Emma: As we refine batching, don’t forget accessibility. In our last round of screen-reader tests, we got feedback that the notification announcements weren’t being properly labeled, so VoiceOver reads ‘Alert from system’ instead of ‘New comment on your Reach post.’
+Sofia: I’ve already filed a ticket to add the aria-label attribute dynamically based on notification content. I’ll prioritize that after you finalize the batching update.
+Mike: Perfect. Emma, can you confirm we still aim for a deploy window tomorrow morning?
+Emma: Yes—assuming Ravi’s code review is complete. We should run accessibility smoke tests in staging this afternoon.
+(Background noise: dog barking briefly)
+Mike: Sounds good. Quick check—any progress on profile image caching issues?
+Ravi: Yes, I instrumented the CDN headers. They were set to cache for 5 minutes instead of 30. I’ve pushed a patch to extend TTL. Rate limiting should be less frequent now.
+Lian: Awesome. Also, I’m reviewing the new A/B test metrics to measure click-through on the “Invite Friends” prompt. Preliminary data looks promising—10% lift so far.
+Mike: Great work. On a non-technical note, remember our team lunch tomorrow—Asian fusion place down the street. My treat!
+Emma: Can’t wait.
+Sofia: Count me in.
+Ravi: See you there.
+Lian: Thanks, Mike.
+
+[End of transcript – ~520 words]

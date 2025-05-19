@@ -1,0 +1,26 @@
+Date: March 18, 2025
+Participants: Olivia, Daniel, Grace, Sophie
+Department: HR
+Meeting Type: Staffing & Training
+
+Olivia: Welcome to our HR staffing and training sync. First, headcount updates. Daniel?
+Daniel: We’ve onboarded 3 CSR reps last week and 2 community managers. Total support headcount is now 12.
+Grace: Good. Training status?
+Sophie: New hires completed Reach 101 and Compliance training. However, 30% failed the post-training quiz on data privacy protocols.
+Olivia: That’s concerning. We need to remediate quickly. Sophie, schedule one-on-one review sessions.
+Sophie: Will do. Also, we have 4 pending offer acceptances for marketing and analytics roles.
+Daniel: Marketing candidate pool is strong; analytics pipeline is shallow. We need more active sourcing.
+Olivia: Let’s engage our recruiting agency more aggressively or attend the TechHiring Expo next month.
+Grace: Soft skills training feedback?
+Sophie: Teams appreciate the communication workshops, but want more practical exercises- role-playing real support scenarios.
+Daniel: We can integrate scenario-based drills for invite feature issues.
+Olivia: Good idea. Schedule those in April’s training calendar.
+(Phone vibrate; group pauses briefly)
+Olivia: Any diversity initiatives?
+Grace: Partnered with Women in Tech for a speaker series next week.
+Sophie: Also rolling out mentorship circles-5 mentors and 10 mentees matched.
+Olivia: Excellent. Finally, performance review timeline for Q1?
+Daniel: Starting April 1. New review form includes growth potential and cultural impact sections.
+Grace: Managers need training on new form.
+Sophie: I’ll prepare a manager workshop.
+Olivia: Perfect. Let’s reconvene next Monday. Thanks!

@@ -1,0 +1,26 @@
+Date: March 15, 2025
+Participants: Liam, Ava, Noah, Zoe
+Department: Security
+Meeting Type: Compliance Checkpoint
+
+Liam: Greetings, team. Today’s compliance checkpoint focuses on Reach’s data privacy and security posture. Ava?
+Ava: We completed internal pentest last week. Discovered two medium-severity issues: insecure direct object references in media uploads, and JWT tokens not rotated on logout.
+Noah: Should be straightforward to fix. For IDOR, we need object-level authorization checks. I’ve drafted a patch in PR #58.
+Zoe: Regarding JWT, we need to implement token blacklisting or short-lived tokens with refresh. I recommend refresh tokens valid for 15 minutes and rotating on every access.
+Liam: Good plan. Also, EU GDPR controls- have we updated our consent flow?
+Ava: Partially. The cookie banner collects explicit consent, but the “privacy settings” page lacks granular controls for data sharing.
+Noah: We need toggles for data processing categories: analytics, personalization, third-party sharing.
+Zoe: I’ll update the UI spec and work with front-end to integrate.
+Liam: On encryption, database backups are currently unencrypted in transit to our S3 bucket.
+Ava: AWS supports server-side encryption. We should enable SSE-S3 immediately.
+Noah: And enforce TLS 1.2+ for all connections.
+Zoe: Already patched staging environment; production rollout tomorrow.
+(Background noise: keyboard clatter)
+Liam: Next: incident response plan. We need to finalize roles for breach notifications.
+Ava: We have a draft: CTO to coordinate technical response, legal for notifications, PR for public statements, support for user inquiries.
+Noah: Let’s table response timelines: notifications within 72 hours per GDPR, but aim for 24 hours internally.
+Zoe: Agree. Also drafting communication templates.
+Liam: Good. Lastly, third-party risk: we use CDNs and email vendors. We need vendor SOC2 Type II reports.
+Ava: Collected from Cloudflare and SendGrid; under review.
+Noah: Next audit due June 1.
+Liam: Perfect. That’s all. Keep us posted on PR status. Meeting adjourned.

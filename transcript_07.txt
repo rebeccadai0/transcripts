@@ -1,0 +1,27 @@
+Date: March 12, 2025
+Participants: Nina, Carlos, Priya, Ethan
+Department: Analytics
+Meeting Type: Data Review
+
+Nina: Hello everyone. Today we’re reviewing Reach’s Q1 usage metrics. Carlos, first slide?
+Carlos: Our DAU hit 15K on March 10, a 20% week-over-week increase. However, WAU growth plateaued at 50K.
+Priya: Interesting. Did we see a correlation with the invite feature rollout?
+Ethan: Yes- invite-enabled cohorts saw a 35% lift in new signups, but churn also increased by 5% after day 3.
+Nina: That suggests onboarding friction. Priya, any insights from user surveys?
+Priya: Survey indicated that users who joined via invites struggled with profile setup- many skipped adding a bio, then became inactive.
+Carlos: And retention curve shows a 40% drop-off at day 1 for those users versus 25% for organic signups.
+Ethan: We might need to simplify onboarding for invitees- maybe pre-fill certain profile fields.
+Priya: Good idea. Also, group creation analytics- average group size is 4.2 members, but engagement within groups drops after one week.
+Nina: Could be lack of group invitations or stale group content. Carlos, what about notifications within groups?
+Carlos: Notification CTR is only 8% for group posts, versus 15% for direct mentions.
+Ethan: Perhaps users are overwhelmed by generic group notifications and ignore them.
+Priya: We can test digest-style notifications for group activity.
+Nina: Agreed. Next, engagement heatmap- peak hours are 7-9 PM EST, low midday. Align notifications to peak windows?
+Carlos: Already prototyped scheduled digests at 8 PM for beta users. Preliminary CTR is 20%.
+Ethan: Nice. Funnel analysis- 60% of users who view a post comment at least once, but only 10% create a group discussion.
+Priya: Discussion UI might need improvement. Our heatmap shows many clicks on the “Start Discussion” button but few completions.
+Nina: Let’s flag that for design team. Anything else?
+Carlos: Ad revenue report: RPM is $2.50, under target of $3.00.
+Ethan: We could optimize ad placement- test interstitial vs. banner.
+Priya: And consider sponsored group tags.
+Nina: Great. Action items: simplify invitee onboarding, test digest notifications, refine discussion flow, optimize ad placement. Meeting adjourned.

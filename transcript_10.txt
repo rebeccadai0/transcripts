@@ -1,0 +1,30 @@
+Date: March 20, 2025
+Participants: Mike, Alex, Sonia, Rahul
+Department: Cross-Functional
+Meeting Type: Sync Meeting
+
+Mike: Hey team, cross-functional sync for Reach launch kickoff. Sonia, kick us off on executive priorities?
+Sonia: Sure. Our main goal is customer acquisition efficiency. Target CAC under $10 by end of Q2. Rahul?
+Rahul: Engineering timeline solid - beta release April 15, full launch June 1. Key milestone: API stability by May 10.
+Alex: Marketing needs final creative assets by May 5. Campaign schedules locked.
+Mike: Great. Any dependency conflicts?
+Rahul: We need final OAuth spec for partner integrations by April 1.
+Sonia: That’s on legal; I’ll expedite.
+Alex: On social outreach, we’re planning simultaneous release on Instagram, TikTok, and LinkedIn.
+Mike: Budget?
+Alex: $200K initial spend, split evenly.
+Rahul: Tech support?
+Mike: CSR team prepped with module training; Olivia from HR handled it.
+Alex: Analytics?
+Rahul: Which dashboard?
+Mike: Real-time KPIs - daily active invites, invite conversion rate, new group creations.
+Rahul: Data engineering to push to Looker by April 20.
+(Keyboard click)
+Sonia: Risks?
+Alex: Influencer content approval taking longer than expected - lagging by 3 days.
+Rahul: Dev notes - bug in comment threading discovered, patch scheduled for tomorrow.
+Mike: Ok. Action items: Rahul to confirm OAuth spec; Alex to finalize influencer contracts; Sonia to expedite legal review; Mike to update project plan.
+Alex: Noted.
+Rahul: Done.
+Sonia: Will do.
+Mike: Thanks everyone - let’s hit these milestones.

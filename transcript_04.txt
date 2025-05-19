@@ -1,0 +1,27 @@
+Date: March 6, 2025
+Participants: Carlos, Dana, Elif
+Department: Design
+Meeting Type: Review
+
+Carlos: Welcome to design review for Reach’s main user flows. First item: onboarding screens. Dana?
+Dana: We ran user testing with 20 participants. 60% completed the flow without confusion; 40% stalled at the "Add Interests" step—too many options made them pause.
+Elif: Our tags UI needs pagination or search within interests. Users said scrolling through 200 tags felt tedious.
+Carlos: Agreed. Let’s implement a search box at top of the tag list and paginate in sets of 50.
+Dana: Also, the progress indicator was unclear. Participants thought they had to complete all steps in one go.
+Elif: We could add a "Save for Later" option and adjust the progress bar label to "Step X of 4: Interests".
+Carlos: Good. Next up: profile layout. Current design uses a circular avatar on the left, bio on the right.
+Dana: Feedback: users expected to tap avatar to change photo but got no affordance.
+Elif: We need a hover state or a small camera icon overlay.
+Carlos: Let’s add that. Accessibility?
+Dana: We ran contrast tests; dark-mode text failed AA on button labels—color ratio too low at 3.8:1.
+Elif: Solution: increase label contrast or adjust button background. We’ll test two variants.
+Carlos: Perfect. Then, messaging UI—our new sliding thread interface. Positive feedback on animation, but users wanted clearer timestamps.
+Dana: Timestamps are hidden in tooltips—people didn’t discover them.
+Elif: Let’s move timestamp next to user name in lighter gray.
+Carlos: Agreed. Any design system updates?
+Dana: Added new primary color palette based on brand guidelines. It’s cohesive but needs more contrast on secondary buttons.
+Elif: We’ll refine that. Quick tangent—did you see the Oscars last night? Unexpected winner in Best Director.
+Carlos: Yes, surprised me. Back to work—snacks on the way?
+Dana: I brought cookies. Elif, coffee?
+Elif: Already on my third cup.
+Carlos: Perfect. Let’s reconvene Thursday at 3 PM for follow-up. Thanks, team!
